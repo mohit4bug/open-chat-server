@@ -17,7 +17,7 @@ const PORT = process.env.PORT || 8000
 
 const io = new SocketServer(server, {
   cors: {
-    origin: process.env.CLIENT_URL,
+    origin: '*',
   },
 })
 
