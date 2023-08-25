@@ -5,6 +5,12 @@ import { Server as SocketServer } from 'socket.io'
 
 dotenv.config()
 const app = express()
+
+// test
+app.get('/', (req, res) => {
+  res.send('Welcome from Open Chat API')
+})
+
 const server = http.createServer(app)
 
 const PORT = process.env.PORT || 8000
